@@ -1,4 +1,4 @@
-//Don't deploy this API je or upload onto GitHub
+//Zeige deine API nicht offentlich
 const API_KEY = "API"
 
 const submitIcon = document.querySelector("#submit-icon");
@@ -6,7 +6,6 @@ const inputEl = document.querySelector("input");
 const imageSection = document.querySelector('.images-section')
 
 // Funktion, um Bilder von der Open AI API abzurufen
-
 const getImages = async () => {
     // Definieren Sie die API-Anfrageoptionen
     const options = {
@@ -25,8 +24,8 @@ const getImages = async () => {
         //Anfrage an die OpenAI-API senden
         const response = await fetch("https://api.openai.com/v1/images/generations", options)
         const data = await response.json()
-        //Die erhaltenen Bildobjekte durchlaufen und sie zur Seite hinzufügen
 
+        //Die erhaltenen Bildobjekte durchlaufen und sie zur Seite hinzufügen
         data ?.data.forEach(imageObject => {
             const imageContainer = document.createElement("div");
             imageContainer.classList.add("image-container");
@@ -41,7 +40,6 @@ const getImages = async () => {
 }
 
 // Event-Listener für die Eingabetaste
-
 inputEl.addEventListener('keydown', async(event) => {
     if (event.key === 'Enter') {
         try {
