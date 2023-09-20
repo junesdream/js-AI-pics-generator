@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+header {
+    color: rgb(58, 54, 54);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header h1 {
+    font-size: 40px;
+    text-shadow: 5px 5px 9px rgba(255, 255, 255, 0.7);
+}
+
+.bottom-section {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.input-container{
+    width: 100%;
+    max-width:  650px;
+    position: relative;
+}
+
+input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    border: double 4px transparent;
+    background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #f00, #3020ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+    box-sizing: border-box;
+}
+
+#submit-icon{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.images-section {
+    width: 100%;
+    max-width:  600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.image-container {
+    width: 48%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(52, 45, 52, 0.7);
+}
+
+.image-container img {
+    width: 100%;
+}
+
